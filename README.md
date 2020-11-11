@@ -1,2 +1,7 @@
-# face-mask-detector-cnn
-A convolutional neural network that can analyze face images and detect whether a person is wearing a face mask or not
+# A Convolutional Network for Face Mask Detection
+
+## Setup locally
+1. Install `poetry` as mentioned here [python-poetry/docs](https://python-poetry.org/docs/)
+2. Run `poetry install`
+3. Use `poetry run <filename>.py` to run a python script
+
