@@ -12,6 +12,7 @@ opencv-python = "^4.4.0"
 tqdm = "^4.51.0"
 googledrivedownloader = "^0.4"
 requests = "^2.25.0"
+torchvision = "^0.8.1"
 
 [tool.poetry.dev-dependencies]
 

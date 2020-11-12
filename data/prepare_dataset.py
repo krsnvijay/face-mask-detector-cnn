@@ -8,9 +8,7 @@ from tqdm import tqdm
 from pathlib import Path
 import shutil
 import os
-import cv2
 
-# download dataset from link provided by
 dirpath = Path('data/dataset')
 if dirpath.exists() and dirpath.is_dir():
     shutil.rmtree(dirpath)
@@ -29,23 +27,20 @@ randomPath = datasetPath/'random'
 maskDF = pd.DataFrame()
 
 for imgPath in tqdm(list(maskPath.iterdir()), desc='with_mask'):
-    image = cv2.imread(str(imgPath))
     maskDF = maskDF.append({
-        'image': image,
+        'image': str(imgPath),
         'mask': 1
     }, ignore_index=True)
 
 for imgPath in tqdm(list(nonMaskPath.iterdir()), desc='without_mask'):
-    image = cv2.imread(str(imgPath))
     maskDF = maskDF.append({
-        'image': image,
+        'image': str(imgPath),
         'mask': 0
     }, ignore_index=True)
 
 for imgPath in tqdm(list(randomPath.iterdir()), desc='random_images'):
-    image = cv2.imread(str(imgPath))
     maskDF = maskDF.append({
-        'image': image,
+        'image': str(imgPath),
         'mask': 2
     }, ignore_index=True)
 
