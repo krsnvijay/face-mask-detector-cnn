@@ -130,3 +130,9 @@ dmypy.json
 
 # IDE specific
 .vscode
+
+# dataset
+data/dataset
+
+# DS_Store
+.DS_Store
