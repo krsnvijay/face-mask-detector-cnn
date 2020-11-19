@@ -20,6 +20,7 @@
 - Run each cell of the notebook on colab one after the other
 - There is an option to run all cells at once in google colab, to do that go to `Runtime -> Run all (Ctrl +F9)`
 - Each cell is annotated with description of what the cell does
+- For subsequent runs don't run the cell `Loading the dataset` as all the images would have been downloaded in your first run.
 
 ## Training the model
 
@@ -27,7 +28,7 @@
 
 - Run the cell with description as `Training the model` and containing the function `train_model`
 
-## Testing the model
+## Testing and evaluating the model
 
 > Note: Make sure to run the previous cells before running this
 
