@@ -1,5 +1,6 @@
-# A Convolutional Network for Face Mask Detection
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pwp6V_l2gt0dQCdvLKBCiCVieCOzazkV?usp=sharing)
+# A Convolutional Network for Face Mask Detection - Deliverable 2
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18l23Rah-Qfpubf5FXBOh2rB42gFfO8iu?usp=sharing)
+
 ## Files
 
 - `Dataset.zip`
@@ -22,14 +23,19 @@
 - Each cell is annotated with description of what the cell does
 - For subsequent runs don't run the cell `Loading the dataset` as all the images would have been downloaded in your first run.
 
+### Alt. Method:
+- Use Anaconda Navigator, use the root environment.
+- Click _Open with Jupyter Notebook_
+- Navigate to `face_mask_detector_cnn.ipynb` and run the cells as mentioned below.
+
 ## Training the model
 
 > Note: Make sure to run the previous cells before running this
 
-- Run the cell with description as `Training the model` and containing the function `train_model`
+- Run the cell with description as `Run the k-fold training and evaluation`.
 
-## Testing and evaluating the model
+## Testing the model
 
 > Note: Make sure to run the previous cells before running this
 
-- Run the cell with description as `Evaluate the model` and containing the function `evaluate_model`
+- Run the cell with description as `Predict the category of an image taken from a test dataset`.
